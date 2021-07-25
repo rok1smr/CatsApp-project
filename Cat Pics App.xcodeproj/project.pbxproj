@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0893F11F25E2BAE500D16514 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893F11E25E2BAE500D16514 /* NetworkManager.swift */; };
 		08BD7A4225612D8A0022EE99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD7A4125612D8A0022EE99 /* AppDelegate.swift */; };
 		08BD7A4425612D8A0022EE99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD7A4325612D8A0022EE99 /* SceneDelegate.swift */; };
 		08BD7A4625612D8A0022EE99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD7A4525612D8A0022EE99 /* ViewController.swift */; };
 		08BD7A4925612D8A0022EE99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BD7A4725612D8A0022EE99 /* Main.storyboard */; };
 		08BD7A4B25612D8D0022EE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BD7A4A25612D8D0022EE99 /* Assets.xcassets */; };
 		08BD7A4E25612D8D0022EE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BD7A4C25612D8D0022EE99 /* LaunchScreen.storyboard */; };
+		08E6591E265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E6591C265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0893F11E25E2BAE500D16514 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		08BD7A3E25612D8A0022EE99 /* Cat Pics App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Pics App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BD7A4125612D8A0022EE99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08BD7A4325612D8A0022EE99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		08BD7A4A25612D8D0022EE99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08BD7A4D25612D8D0022EE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08BD7A4F25612D8D0022EE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E6591D265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model Cat Pics App.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				08BD7A4125612D8A0022EE99 /* AppDelegate.swift */,
+				08E6591C265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld */,
 				08BD7A4325612D8A0022EE99 /* SceneDelegate.swift */,
-				08BD7A4525612D8A0022EE99 /* ViewController.swift */,
+				0893F11E25E2BAE500D16514 /* NetworkManager.swift */,
 				08BD7A4725612D8A0022EE99 /* Main.storyboard */,
+				08BD7A4525612D8A0022EE99 /* ViewController.swift */,
 				08BD7A4A25612D8D0022EE99 /* Assets.xcassets */,
 				08BD7A4C25612D8D0022EE99 /* LaunchScreen.storyboard */,
 				08BD7A4F25612D8D0022EE99 /* Info.plist */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E6591E265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld in Sources */,
+				0893F11F25E2BAE500D16514 /* NetworkManager.swift in Sources */,
 				08BD7A4625612D8A0022EE99 /* ViewController.swift in Sources */,
 				08BD7A4225612D8A0022EE99 /* AppDelegate.swift in Sources */,
 				08BD7A4425612D8A0022EE99 /* SceneDelegate.swift in Sources */,
@@ -341,6 +349,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08E6591C265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08E6591D265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodel */,
+			);
+			currentVersion = 08E6591D265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodel */;
+			path = "Model Cat Pics App.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 08BD7A3625612D8A0022EE99 /* Project object */;
 }
