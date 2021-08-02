@@ -7,6 +7,12 @@
 
 // colors used: https://colorhunt.co/palette/220248
 
+// there are 3 arrays currently implemented:
+// likedArray - is created in the main vs to store URLs when the liked button is pressed
+// savedArray - stores the above mentioned URLs into the user defaults
+// savedItems - used in the SavedPicsViewController to display the URLs on the saved screen
+
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -38,10 +44,11 @@ class ViewController: UIViewController {
         loadImage()
     }
     
-    
+//    need to implement "set" of the user defaults to add new URLs when the liked button is pressed
+//    to the liked array (already done) but also to the saved array that stores info in the user defaults
     @IBAction func buttonLike(_ sender: UIButton) {
         guard let currentURL = currentURL else { return }
-        
+    
         likedArray.append(currentURL)
         print(likedArray)
     }
@@ -103,6 +110,19 @@ class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
         
+    
+// via the PREPARE for segue assigned the identifier of the transition from the main vc to the saved pics vc
+// and defined savedItems array from the saved pics vc equals to the liked array from the main vc
+// to which we add the URLs via the like button
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SavedViewController"{
+            if let vc = segue.destination as? SavedPicsViewController {
+                vc.savedItems = likedArray
+            }
+        }
+        
+    }
+    
 }
 
 

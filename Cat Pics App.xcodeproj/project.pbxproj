@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087EE2EB26B1B047001D5E63 /* SavedPicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EE2EA26B1B047001D5E63 /* SavedPicsViewController.swift */; };
 		0893F11F25E2BAE500D16514 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893F11E25E2BAE500D16514 /* NetworkManager.swift */; };
 		08BD7A4225612D8A0022EE99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD7A4125612D8A0022EE99 /* AppDelegate.swift */; };
 		08BD7A4425612D8A0022EE99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD7A4325612D8A0022EE99 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		087EE2EA26B1B047001D5E63 /* SavedPicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPicsViewController.swift; sourceTree = "<group>"; };
 		0893F11E25E2BAE500D16514 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		08BD7A3E25612D8A0022EE99 /* Cat Pics App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Pics App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BD7A4125612D8A0022EE99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				0893F11E25E2BAE500D16514 /* NetworkManager.swift */,
 				08BD7A4725612D8A0022EE99 /* Main.storyboard */,
 				08BD7A4525612D8A0022EE99 /* ViewController.swift */,
+				087EE2EA26B1B047001D5E63 /* SavedPicsViewController.swift */,
 				08BD7A4A25612D8D0022EE99 /* Assets.xcassets */,
 				08BD7A4C25612D8D0022EE99 /* LaunchScreen.storyboard */,
 				08BD7A4F25612D8D0022EE99 /* Info.plist */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E6591E265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld in Sources */,
+				087EE2EB26B1B047001D5E63 /* SavedPicsViewController.swift in Sources */,
 				0893F11F25E2BAE500D16514 /* NetworkManager.swift in Sources */,
 				08BD7A4625612D8A0022EE99 /* ViewController.swift in Sources */,
 				08BD7A4225612D8A0022EE99 /* AppDelegate.swift in Sources */,
