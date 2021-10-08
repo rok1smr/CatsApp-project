@@ -9,17 +9,6 @@ import Foundation
 import UIKit
 
 
-//struct LikedLinks{
-//    let id: String
-//    let url: String
-//
-//    init(id: String, url: String){
-//        self.id = id
-//        self.url = url
-//    }
-//}
-
-
 struct ApiResponseDataModel: Codable {
     var id: String
     var url: String
@@ -27,7 +16,7 @@ struct ApiResponseDataModel: Codable {
 }
 
 class NetworkManager {
-    static var shared = NetworkManager() // патерн singleton, если не понятно поясню
+    static var shared = NetworkManager() 
     init() { }
     
     func getImageURL(handler: @escaping (URL?) -> () ) {

@@ -7,27 +7,28 @@
 
 // colors used: https://colorhunt.co/palette/220248
 
-// there are 3 arrays currently implemented:
-// likedArray - is created in the main vs to store URLs when the liked button is pressed
-// savedArray - stores the above mentioned URLs into the user defaults
-// savedItems - used in the SavedPicsViewController to display the URLs on the saved screen
 
+// savedItems - used in the SavedPicsViewController to display the URLs on the saved screen
 
 import UIKit
 
 class ViewController: UIViewController {
     
-////    creating the user defaults
-
+//  creating the user defaults
+    var URLSave: URL? {
+        get {
+            return UserDefaults.standard.url(forKey: "SavedArray")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "SavedArray")
+            UserDefaults.standard.synchronize()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadImage()
-        
-        let defaults = UserDefaults.standard
-        defaults.set(likedArray, forKey: "SavedArray")
-        let savedArray = defaults.object(forKey: "SavedArray") as? [String] ?? [String]()
-        print(savedArray)
     }
     
     
@@ -36,8 +37,8 @@ class ViewController: UIViewController {
     }
     var cats = theCatAPI()
     
-    var likedArray:[URL] = []
     var currentURL: URL?
+    
     
     @IBOutlet weak var catsHere: UIImageView!
     @IBAction func buttonNext(_ sender: UIButton) {
@@ -48,14 +49,12 @@ class ViewController: UIViewController {
 //    to the liked array (already done) but also to the saved array that stores info in the user defaults
     @IBAction func buttonLike(_ sender: UIButton) {
         guard let currentURL = currentURL else { return }
-    
-        likedArray.append(currentURL)
-        print(likedArray)
+        URLsStore.shared.addURL(currentURL)
     }
     
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
-    func loadImage() {
+    public func loadImage() {
         setProgressIndicatorEnabled(true)
         NetworkManager.shared.getImageURL { [weak self] (url) in
             
@@ -65,7 +64,6 @@ class ViewController: UIViewController {
                 return
             }
             
-            // получили нашу ссылку для фото
             
             NetworkManager.shared.getImageFromURL(url) { (image) in
                 defer {
@@ -86,7 +84,6 @@ class ViewController: UIViewController {
     }
 
     
-// протянул из сториборда элемент UIActivityIndicatorView и добавил его название в функцию, по умолчанию он не работает
     func setProgressIndicatorEnabled(_ enabled: Bool) {
         loadingIndicator.isHidden = !enabled
         if enabled {
@@ -109,20 +106,6 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
-        
-    
-// via the PREPARE for segue assigned the identifier of the transition from the main vc to the saved pics vc
-// and defined savedItems array from the saved pics vc equals to the liked array from the main vc
-// to which we add the URLs via the like button
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SavedViewController"{
-            if let vc = segue.destination as? SavedPicsViewController {
-                vc.savedItems = likedArray
-            }
-        }
-        
-    }
-    
 }
 
 

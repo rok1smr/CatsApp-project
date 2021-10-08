@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		087EE2EB26B1B047001D5E63 /* SavedPicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EE2EA26B1B047001D5E63 /* SavedPicsViewController.swift */; };
+		0884FB2926DA57CC005FD4EC /* PicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884FB2826DA57CC005FD4EC /* PicCell.swift */; };
 		0893F11F25E2BAE500D16514 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893F11E25E2BAE500D16514 /* NetworkManager.swift */; };
 		08BD7A4225612D8A0022EE99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD7A4125612D8A0022EE99 /* AppDelegate.swift */; };
 		08BD7A4425612D8A0022EE99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD7A4325612D8A0022EE99 /* SceneDelegate.swift */; };
@@ -15,12 +16,16 @@
 		08BD7A4925612D8A0022EE99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BD7A4725612D8A0022EE99 /* Main.storyboard */; };
 		08BD7A4B25612D8D0022EE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BD7A4A25612D8D0022EE99 /* Assets.xcassets */; };
 		08BD7A4E25612D8D0022EE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BD7A4C25612D8D0022EE99 /* LaunchScreen.storyboard */; };
+		08D0D5D626B994F70098596E /* URLStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D0D5D526B994F70098596E /* URLStore.swift */; };
+		08E405BC26DA538B0076A869 /* PicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E405BB26DA538B0076A869 /* PicsCollectionViewController.swift */; };
 		08E6591E265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E6591C265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		087EE2EA26B1B047001D5E63 /* SavedPicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPicsViewController.swift; sourceTree = "<group>"; };
+		0884FB2826DA57CC005FD4EC /* PicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicCell.swift; sourceTree = "<group>"; };
 		0893F11E25E2BAE500D16514 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		08A9152A26C981B000BA76F8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		08BD7A3E25612D8A0022EE99 /* Cat Pics App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Pics App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BD7A4125612D8A0022EE99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08BD7A4325612D8A0022EE99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +34,8 @@
 		08BD7A4A25612D8D0022EE99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08BD7A4D25612D8D0022EE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08BD7A4F25612D8D0022EE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08D0D5D526B994F70098596E /* URLStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLStore.swift; sourceTree = "<group>"; };
+		08E405BB26DA538B0076A869 /* PicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsCollectionViewController.swift; sourceTree = "<group>"; };
 		08E6591D265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model Cat Pics App.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,18 +69,38 @@
 		08BD7A4025612D8A0022EE99 /* Cat Pics App */ = {
 			isa = PBXGroup;
 			children = (
+				08E405BA26DA512E0076A869 /* system */,
+				08ED5E8E26DBB1AA006F6C94 /* PicsCollection */,
+				087EE2EA26B1B047001D5E63 /* SavedPicsViewController.swift */,
+				08D0D5D526B994F70098596E /* URLStore.swift */,
+				0893F11E25E2BAE500D16514 /* NetworkManager.swift */,
+				08BD7A4525612D8A0022EE99 /* ViewController.swift */,
+				08BD7A4725612D8A0022EE99 /* Main.storyboard */,
+				08BD7A4A25612D8D0022EE99 /* Assets.xcassets */,
+				08BD7A4C25612D8D0022EE99 /* LaunchScreen.storyboard */,
+				08A9152A26C981B000BA76F8 /* .gitignore */,
+			);
+			path = "Cat Pics App";
+			sourceTree = "<group>";
+		};
+		08E405BA26DA512E0076A869 /* system */ = {
+			isa = PBXGroup;
+			children = (
 				08BD7A4125612D8A0022EE99 /* AppDelegate.swift */,
 				08E6591C265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld */,
 				08BD7A4325612D8A0022EE99 /* SceneDelegate.swift */,
-				0893F11E25E2BAE500D16514 /* NetworkManager.swift */,
-				08BD7A4725612D8A0022EE99 /* Main.storyboard */,
-				08BD7A4525612D8A0022EE99 /* ViewController.swift */,
-				087EE2EA26B1B047001D5E63 /* SavedPicsViewController.swift */,
-				08BD7A4A25612D8D0022EE99 /* Assets.xcassets */,
-				08BD7A4C25612D8D0022EE99 /* LaunchScreen.storyboard */,
 				08BD7A4F25612D8D0022EE99 /* Info.plist */,
 			);
-			path = "Cat Pics App";
+			name = system;
+			sourceTree = "<group>";
+		};
+		08ED5E8E26DBB1AA006F6C94 /* PicsCollection */ = {
+			isa = PBXGroup;
+			children = (
+				0884FB2826DA57CC005FD4EC /* PicCell.swift */,
+				08E405BB26DA538B0076A869 /* PicsCollectionViewController.swift */,
+			);
+			name = PicsCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +176,12 @@
 				08E6591E265C14D700BB9BC7 /* Model Cat Pics App.xcdatamodeld in Sources */,
 				087EE2EB26B1B047001D5E63 /* SavedPicsViewController.swift in Sources */,
 				0893F11F25E2BAE500D16514 /* NetworkManager.swift in Sources */,
+				08E405BC26DA538B0076A869 /* PicsCollectionViewController.swift in Sources */,
 				08BD7A4625612D8A0022EE99 /* ViewController.swift in Sources */,
 				08BD7A4225612D8A0022EE99 /* AppDelegate.swift in Sources */,
+				08D0D5D626B994F70098596E /* URLStore.swift in Sources */,
 				08BD7A4425612D8A0022EE99 /* SceneDelegate.swift in Sources */,
+				0884FB2926DA57CC005FD4EC /* PicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

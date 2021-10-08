@@ -8,11 +8,11 @@
 import UIKit
 
 // created a new vc for the screen with the saved/liked URLs
-
 class SavedPicsViewController: UIViewController {
     
 //    assigned a public property that will receive the saved URLs from the main vc
     public var savedItems:[URL] = []
+    
     
 //    attached the table view from storyboard to the code
     @IBOutlet weak var tableView: UITableView!
@@ -20,13 +20,19 @@ class SavedPicsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Saved Pictures"
+        navigationItem.title = "Saved Pictures URLs"
         
         tableView.delegate = self
         tableView.dataSource = self
         
+        loadSavedItems()
     }
-    
+ 
+// функция которая достает все ссылки из юзер дефолтс
+    public func loadSavedItems() {
+       savedItems = URLsStore.shared.getURLs()
+    print(savedItems)
+    }
 }
 
 // created the extensions that describe the class SavedPicsViewController
