@@ -14,6 +14,11 @@ CatsApp has the following functionality:
  
  JSON / UIImageView / UITableView / UICollectionView / NavigationController / UserDefaults
  
+ ## Here is a small preview of the app:
+ 
+ ![ezgif com-gif-maker-3](https://user-images.githubusercontent.com/65097031/136632170-beb8b261-e86d-4f8c-b132-c3b770245b0e.gif)
+ 
+ 
  ## Screen 1
  <img width="358" alt="Screenshot 2021-10-09 at 01 15 42" src="https://user-images.githubusercontent.com/65097031/136630914-bff7f915-5f7f-4854-93a2-06e7d34dcfea.png">
  
